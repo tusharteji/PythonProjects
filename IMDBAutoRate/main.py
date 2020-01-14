@@ -28,7 +28,7 @@ with open('names.txt', 'r') as f:
         time.sleep(1)
         driver.find_element_by_id('suggestion-search-button').click()
         time.sleep(2)
-        driver.find_element_by_link_text('Chhapaak').click()
+        driver.find_element_by_link_text(movie_name).click()
         time.sleep(2)
         driver.find_element_by_xpath('//*[@id="star-rating-widget"]/div/button/span[1]').click()
         time.sleep(1)
