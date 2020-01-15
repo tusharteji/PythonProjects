@@ -40,5 +40,5 @@ with open('names.txt', 'r') as f:
         time.sleep(1)
         driver.close()
         count += 1
-print("Count: " + count)
+print("Count: " + str(count))
 print("Last name processed: " + name)
