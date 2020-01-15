@@ -24,7 +24,11 @@ with open('names.txt', 'r') as f:
         time.sleep(1)
         driver.find_element_by_class_name('a-button-input').click()
         time.sleep(1)
-        driver.find_element_by_id('suggestion-search').send_keys(movie_name)
+        try:
+            driver.find_element_by_id('suggestion-search').send_keys(movie_name)
+        except:
+            print("Could not complete all the accounts!")
+            break
         time.sleep(1)
         driver.find_element_by_id('suggestion-search-button').click()
         time.sleep(2)
