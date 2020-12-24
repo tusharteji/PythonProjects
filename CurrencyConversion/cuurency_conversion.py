@@ -56,6 +56,7 @@ def send_email(user, passwrd, amt, receiver):
     server.send_message(msg)
     server.quit()
 
+
 if __name__ == "__main__":
     arg = parser()
     user, passwrd = fetch_creds()
