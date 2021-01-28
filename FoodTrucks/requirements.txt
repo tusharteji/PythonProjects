@@ -1,0 +1,4 @@
+colorama
+prettytable
+requests
+getch; sys_platform == 'darwin' or sys_platform == 'linux' or sys_platform == 'linux2'
